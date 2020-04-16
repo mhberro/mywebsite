@@ -7,7 +7,7 @@ bio: My research interests include distributed robotics, mobile computing and pr
 btn:
 - label: Download Resume
   url: https://sourcethemes.com/academic/docs/install/
-display_education: false
+display_education: true
 education:
   courses:
   - course: PhD in Artificial Intelligence
