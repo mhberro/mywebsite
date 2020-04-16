@@ -50,12 +50,12 @@ time_format = "3:04 PM"
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "mhberro@hotmail.com"
+email = "moberro777@gmail.com"
 phone = "702.204.9383"
-address = "4946 W Hot Babe Verde, Las vegas, Nevada, 89139, USA"
+address = "4946 W Mesa Verde, Las vegas, Nevada, 89139, USA"
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
-office_hours = """Monday 10:00 to 13:00<br>
+office_hours = """Tuesday 10:00 to 13:00<br>
                   Wednesday 09:00 to 10:00"""
 
 # Enter an optional link for booking appointments (e.g. calendly.com).
