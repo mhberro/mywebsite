@@ -13,22 +13,22 @@ education:
   - course: PhD in Artificial Intelligence
     institution: Stanford University
     year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
+  - course: MEng in Data Science
+    institution: Georgia Institute of Technology
+    year: 2021
+  - course: BSEng in Electrical Engineering
+    institution: University of Nevada, Reno
     year: 2008
 email: ""
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
-name: Michael Vahn
+- Deep Learning
+- Network Based Algorithms
+- Machine Learning 
+name: Mo Berro
 organizations:
-- name: Stanford University
+- name: Health Management Systems
   url: ""
-role: Professor of Artificial Intelligence
+role: Data Analyst and SQL Programmer
 social:
 - icon: envelope
   icon_pack: fas
