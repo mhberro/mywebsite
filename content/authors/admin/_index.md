@@ -24,6 +24,7 @@ interests:
 - Deep Learning
 - Network Based Algorithms
 - Machine Learning 
+- Software and Data Engineering
 name: Mo Berro
 organizations:
 - name: Health Management Systems
