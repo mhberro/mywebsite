@@ -47,11 +47,7 @@ title: A Study of Snail Behavior
 
 
 
-## Updating
 
-[View the Update Guide](https://sourcethemes.com/academic/docs/update/).
-
-Feel free to *star* the project on [Github](https://github.com/gcushen/hugo-academia/) to help keep track of [updates](https://sourcethemes.com/academic/updates).
 
 ## License
 
