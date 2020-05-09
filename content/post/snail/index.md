@@ -45,16 +45,6 @@ title: A Study of Snail Behavior
 
 **When a snail jumps...it's happy**
 
-
-
-## Color Themes
-
-academia comes with **day (light) and night (dark) mode** built-in. Click the sun/moon icon in the top right of the [Demo](https://academia-demo.netlify.com/) to see it in action!
-
-Choose a stunning color and font theme for your site. Themes are fully customizable and include:
-
-{{< gallery >}}
-
 ## Ecosystem
 
 * **[academia Admin](https://github.com/sourcethemes/academia-admin):** An admin tool to import publications from BibTeX or import assets for an offline site
