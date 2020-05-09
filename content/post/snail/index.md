@@ -45,21 +45,7 @@ title: A Study of Snail Behavior
 
 **When a snail jumps...it's happy**
 
-## Ecosystem
 
-* **[academia Admin](https://github.com/sourcethemes/academia-admin):** An admin tool to import publications from BibTeX or import assets for an offline site
-* **[academia Scripts](https://github.com/sourcethemes/academia-scripts):** Scripts to help migrate content to new versions of academia
-
-## Install
-
-You can choose from one of the following four methods to install:
-
-* [**one-click install using your web browser (recommended)**](https://sourcethemes.com/academic/docs/install/#install-with-web-browser)
-* [install on your computer using **Git** with the Command Prompt/Terminal app](https://sourcethemes.com/academic/docs/install/#install-with-git)
-* [install on your computer by downloading the **ZIP files**](https://sourcethemes.com/academic/docs/install/#install-with-zip)
-* [install on your computer with **RStudio**](https://sourcethemes.com/academic/docs/install/#install-with-rstudio)
-
-Then [personalize and deploy your new site](https://sourcethemes.com/academic/docs/get-started/).
 
 ## Updating
 
