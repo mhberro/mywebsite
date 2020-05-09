@@ -49,8 +49,6 @@ title: A Study of Snail Behavior
 
 
 
-## License
 
-Copyright 2016-present [George Cushen](https://georgecushen.com).
 
 Released under the [MIT](https://github.com/gcushen/hugo-academia/blob/master/LICENSE.md) license.
