@@ -51,4 +51,3 @@ title: A Study of Snail Behavior
 
 
 
-Released under the [MIT](https://github.com/gcushen/hugo-academia/blob/master/LICENSE.md) license.
