@@ -36,30 +36,16 @@ image:
   preview_only: false
 lastmod: "2019-04-17T00:00:00Z"
 projects: []
-subtitle: 'Create a beautifully simple website in under 10 minutes :rocket:'
-summary: Create a beautifully simple website in under 10 minutes.
+subtitle: 'Analyzing the perplexing pyschology of snails :rocket:'
+summary: Analyzing the perplexing pyschology of snails.
 tags:
 - academia
 title: A Study of Snail Behavior
 ---
 
-** website with academia using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 _widgets_, _themes_, and _language packs_ included!**
+**When a snail jump...it's happy**
 
-[Check out the latest **demo**](https://academia-demo.netlify.com/) of what you'll get in less than 10 minutes, or [view the **showcase**](https://sourcethemes.com/academic/#expo) of personal, project, and business sites.
-
-- [**Setup academia**](#install)
-- [**Get Started**](https://sourcethemes.com/academic/docs/get-started/)
-- [View the documentation](https://sourcethemes.com/academic/docs/)
-- [Ask a question](http://discuss.gohugo.io/)
-- [Request a feature or report a bug](https://github.com/gcushen/hugo-academia/issues)
-- Updating? View the [Update Guide](https://sourcethemes.com/academic/docs/update/) and [Release Notes](https://sourcethemes.com/academic/updates/)
-- Support development of academia:
-  - [Donate a coffee](https://paypal.me/cushen)
-  - [Become a backer on Patreon](https://www.patreon.com/cushen)
-  - [Decorate your laptop or journal with an academia sticker](https://www.redbubble.com/people/neutreno/works/34387919-academia)
-  - [Wear the T-shirt](https://academia.threadless.com/)
-
-[![Screenshot](https://raw.githubusercontent.com/gcushen/hugo-academia/master/academia.png)](https://github.com/gcushen/hugo-academia/)
+(https://github.com/gcushen/hugo-academia/)
 
 **Key features:**
 
