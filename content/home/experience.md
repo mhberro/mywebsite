@@ -33,9 +33,9 @@ date_format = "Jan 2006"
   """
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
-  company_url = ""
+  title = "Electrical/Software Engineer"
+  company = "United States Department of the Navy"
+  company_url = "https://www.navair.navy.mil/"
   location = "California"
   date_start = "2016-01-01"
   date_end = "2016-12-31"
@@ -49,11 +49,7 @@ date_format = "Jan 2006"
   date_start = "2005-04-01"
   date_end = "2008-5-30"
   description = """
-  Achievements:
-  * Construct a Miniature Dense Plasma Focus Machine with funds obtained from below proposal
-  
-  Responsibilities include:
-  * Performed testing on a 2 TW Pulsed-Power Generator to conduct research on dense plasma energy
+
   """
   
 +++
