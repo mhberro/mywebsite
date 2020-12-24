@@ -47,9 +47,13 @@ date_format = "Jan 2006"
   company_url = "https://www.unr.edu/physics/zppl"
   location = "Reno"
   date_start = "2005-04-01"
-  date_end = "2008-5-30"
+  date_end = "2008-05-30"
   description = """
-
+  Achievements:
+  * Construct a Miniature Dense Plasma Focus Machine with funds obtained from below proposal
+  
+  Responsibilities include:
+  * Performed testing on a 2 TW Pulsed-Power Generator to conduct research on dense plasma energy
   """
   
 +++
