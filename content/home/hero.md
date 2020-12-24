@@ -42,6 +42,6 @@ hero_media = "user-2.jpg"
   label = "Contact me"
 
 +++
-## My name is **Mohamed (Mo) Berro** and I'm a **Professor** specializing in **Artificial Intelligence**
+## My name is **Mohamed (Mo) Berro** and I'm a **Data Scientist** specializing in **Artificial Intelligence**
 
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.
+My passion is in building models 
