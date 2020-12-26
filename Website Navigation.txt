@@ -1,4 +1,5 @@
 Home Page
 	Summary section: content->home->hero
+	Summary section pt2: content->authors->admin->index
 	Experience section: content->home->experience
 	
