@@ -10,9 +10,6 @@ btn:
 display_education: true
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
   - course: MEng in Data Science
     institution: Georgia Institute of Technology
     year: 2021
