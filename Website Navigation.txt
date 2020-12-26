@@ -1,0 +1,4 @@
+Home Page
+	Summary section: content->home->hero
+	Experience section: content->home->experience
+	

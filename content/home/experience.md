@@ -18,25 +18,44 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "CEO"
-  company = "GenCoin"
-  company_url = ""
-  location = "California"
-  date_start = "2017-01-01"
-  date_end = ""
+  title = "Senior Analyst/Data Scientist"
+  company = "HMS"
+  company_url = "www.hms.com"
+  location = "Las Vegas, Nevada"
+  date_start = "2013-08-01"
+  date_end = "Present"
   description = """
-  Responsibilities include:
+  A healthcare services company that identifies and recoups overpayments to providers
+  Achievements:
   
-  * Analysing
-  * Modelling
-  * Deploying
+  * Led a team of 4 in building the infrastructure to automate the ingestion and transformation of data from an Azure
+Data Lake Store into HMS servers using the Azure-SSIS integration runtime in Azure Data Factory
+  * Provided subject matter expertise on six separate subsystems responsible for onboarding client data to different
+HMS data warehouses that, combined, account for approximately 40% of HMS’s total revenue stream
+  * Led an initiative with multiple departments to architect a claim tracking system that provides account managers
+with a dashboard detailing the movement of claim data throughout HMS servers, providing business with a layer of
+transparency that drastically reduced client abrasion
+  * Streamlined and automated an ETL process for the onboarding of data from clients into HMS servers by reworking
+load stored procedures to incorporate performance centric SQL programming paradigms, reducing previous load
+times by 75%
+  * Provided multiple database performance tuning and optimization lectures to developers in a classroom setting,
+providing an in-depth view of clustered and nonclustered indexes from a data structure perspective along with other
+SQL Server insights
+  * Built a network-based model that uses the Louvain algorithm and Markov chain to create communities of super
+nodes consisting of high-risk claims, ranking the network of claims according to a measure each claim’s steady-state
+probability
+  * Initiated, designed, created, tested, and deployed company-wide a WPF software application that’s written in C#
+and uses an MVVM design pattern that links to SQL Server databases using Entity Framework and displays data via
+XAML, reducing each employee’s man hours by 50 hours/week
+  * Wrangled data using Pandas to build a Gradient Boosting algorithm containing 60 Decision Tree models using scikit-learn, classifying claims with 88% accuracy
+  * Architected and deployed data processing solutions that redefine HMS data onboarding principles to target and filter specific claims whose net savings is significantly higher than its peers, increasing net profitability by 20% over traditional processes
   """
 
 [[experience]]
   title = "Electrical/Software Engineer"
   company = "United States Department of the Navy"
   company_url = "https://www.navair.navy.mil/"
-  location = "California"
+  location = "Point Mugu, California"
   date_start = "2009-03-01"
   date_end = "2013-08-31"
   description = """
@@ -53,10 +72,11 @@ date_format = "Jan 2006"
   title = "Electrical Engineer - Intern"
   company = "Zebra Pulsed Power Lab"
   company_url = "https://www.unr.edu/physics/zppl"
-  location = "Reno"
+  location = "Reno, Nevada"
   date_start = "2005-04-01"
   date_end = "2008-05-30"
   description = """
+  A laboratory that studies matter under extreme conditions of temperature and density
   Achievements:
   * Construct a Miniature Dense Plasma Focus Machine with funds obtained from below proposal
   
