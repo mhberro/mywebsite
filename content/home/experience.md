@@ -23,7 +23,7 @@ date_format = "Jan 2006"
   company_url = "www.hms.com"
   location = "Las Vegas, Nevada"
   date_start = "2013-08-01"
-  date_end = "Present"
+  date_end = ""
   description = """
   A healthcare services company that identifies and recoups overpayments to providers
   Achievements:
