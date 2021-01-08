@@ -10,7 +10,7 @@ btn:
 display_education: true
 education:
   courses:
-  - course: MEng in Data Science
+  - course: MEng in Data Science (testing)
     institution: Georgia Institute of Technology
     year: 2021
   - course: BSEng in Electrical Engineering
