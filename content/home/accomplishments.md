@@ -20,22 +20,22 @@ date_format = "Jan 2006"
 
 [[item]]
   organization = "Coursera"
-  organization_url = "https://www.coursera.org"
-  title = "Neural Networks and Deep Learning"
+  organization_url = "https://www.coursera.org/learn/cs-fundamentals-1"
+  title = "Object-Oriented Data Structures in C++"
   url = ""
-  certificate_url = "https://www.coursera.org"
-  date_start = "2018-10-01"
-  date_end = ""
-  description = "Formulated informed blockchain models, hypotheses, and use cases."
+  certificate_url = "https://www.coursera.org/account/accomplishments/verify/DSGGYY4VA4S5"
+  date_start = "2019-02-16"
+  date_end = "2019-03-16"
+  description = "Implement data structures as C++ classes."
 
 [[item]]
-  organization = "edX"
+  organization = "Coursera"
   organization_url = "https://www.edx.org"
-  title = "Blockchain Fundamentals"
-  url = "https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals"
+  title = "Ordered Data Structures"
+  url = "https://www.coursera.org/account/accomplishments/verify/D2P7NRAT4JM8"
   certificate_url = "https://www.edx.org"
-  date_start = "2018-03-01"
-  date_end = ""
+  date_start = "2019-04-03"
+  date_end = "2019-05-03"
   description = "Formulated informed blockchain models, hypotheses, and use cases."
   
 [[item]]
@@ -46,7 +46,7 @@ date_format = "Jan 2006"
   certificate_url = "https://www.datacamp.com"
   date_start = "2017-07-01"
   date_end = "2017-12-21"
-  description = ""
+  description = "The specific data structures covered by this course include arrays, linked lists, queues, stacks, trees, binary trees, AVL trees, B-trees and heaps. This course also shows, through algorithm complexity analysis, how these structures enable the fastest algorithms to search and sort data."
   
 [[item]]
   organization = "RDX"
