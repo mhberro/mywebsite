@@ -1,12 +1,12 @@
 ---
 date: "2016-04-27T00:00:00Z"
-external_link: null
+external_link: https://mhberro.github.io/
 image:
-  caption: Photo by Toa Heftiba on Unsplash
+  caption: Photo by Mo Berro
   focal_point: Smart
-summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eius.
+summary: Using machine learning to predict climate change for climate migrators
 tags:
 - Demo
-- robotics
-title: Artificial Intelligence
+- deep learning
+title: Climate Migration
 ---
