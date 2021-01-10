@@ -42,6 +42,4 @@ Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoq
 print('hello world')
 ```
 
-    hello world 
-          
- 
+    hello world
