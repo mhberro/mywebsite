@@ -11,7 +11,7 @@ tags:
 title: Climate Migration
 ---
 
-https://mhberro.github.io/
+Please visit https://mhberro.github.io/ to interact with the Climate Migration tool
 
 ```python
 import pandas as pd
