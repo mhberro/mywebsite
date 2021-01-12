@@ -1,6 +1,6 @@
 ---
 date: "2016-04-27T00:00:00Z"
-external_link: https://mhberro.github.io/
+external_link: null
 image:
   caption: Photo by Mo Berro
   focal_point: Smart
@@ -10,6 +10,8 @@ tags:
 - Deep Learning
 title: Climate Migration
 ---
+
+https://mhberro.github.io/
 
 ```python
 import pandas as pd
