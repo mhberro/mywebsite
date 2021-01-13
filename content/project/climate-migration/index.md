@@ -9,6 +9,10 @@ tags:
 - Demo
 - Deep Learning
 title: Climate Migration
+output:
+  html_document:
+    keep_md: true
+    fig_caption: yes
 ---
 
 Please visit https://mhberro.github.io/ to interact with the Climate Migration tool. 
