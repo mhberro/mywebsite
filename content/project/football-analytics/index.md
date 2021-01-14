@@ -10,6 +10,30 @@ tags:
 title: Football Analytics
 ---
 
+# Problem Statement
+
+Football is well-known to be a team sport, requiring the skills of a wide
+variety of players and careful coordination of all teammates. The ultimate
+goal of the team is to win as many games as possible, hopefully becoming
+the top team in all of college football. But how do the stats associated with
+each player contribute to the odds of reaching the top 25 by the end of the
+year?
+
+In this project, I dive into how different players' stats predict the ranking
+a team will have at the end of the season. Can I forecast a top 25 finish
+with just the quarterback's rating or perhaps a few offensive statistics? Or,
+as is the case on the field, will I need the full team's effort to accurately
+predict the outcome for the season?
+
+This problem is one of interest and significance for a number of reasons. For
+one, it was an intellectual curiosity for me, simply to determine if I
+could determine a top 25 finish. There is additionally a market for this among
+gamblers - being able to model the likelihood of a team performing well could
+be a lucrative opportunity in Vegas. Finally, with all the crazy things going
+on in 2020 and the very real possibility that the 2020 football season will be 
+a very unusual one, it was nice to have see how predicted outcomes match actual
+outcomes.
+
 ```python
 import numpy as np
 import pandas as pd
@@ -18,8 +42,32 @@ import matplotlib.pyplot as plt
 from scipy.stats import chi2_contingency
 from scipy.stats import shapiro
 from statsmodels.graphics.gofplots import qqplot
+```
+# Data Source
 
+The metrics used in this analysis are the result of significant screen scraping
+from espn.com using C# and storing the data in my local MSSQL instance. I pulled 
+statistics for 5 key players from all NCAA FCS division football teams across the 
+2018 and 2019 seasons, along with the team's conference and whether they finished 
+in the AP Top 25 that year.
 
+The player stats used were for the players with the most:
+- passing yards
+- receiving yards
+- rushing yards
+- tackles
+- interceptions
+
+This yielded a data set of approximately 130 teams (teams do occasionally
+come into or move out of the division) and 44 predictors with which to predict
+the season's final outcome.
+
+# Content
+
+## 1. Clean data
+- 1) Clean ESPN NCAAF Team Leader Data
+
+```
 conferencedata = pd.read_csv('NCAAF Team Leaders_2018.csv')
 rawdata2018 = pd.read_csv('2018.csv')
 rawdata2018 = pd.concat([rawdata2018, conferencedata['conference']], axis=1)
