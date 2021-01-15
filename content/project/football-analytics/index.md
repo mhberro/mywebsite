@@ -76,7 +76,17 @@ the season's final outcome.
 
 ## 3. Create and train models
 
+
+```python
+
 ```
+
+## 1. Clean data
+
+- 1) Clean ESPN NCAAF Team Leader data
+
+
+```python
 conferencedata = pd.read_csv('NCAAF Team Leaders_2018.csv')
 rawdata2018 = pd.read_csv('2018.csv')
 rawdata2018 = pd.concat([rawdata2018, conferencedata['conference']], axis=1)
