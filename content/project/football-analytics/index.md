@@ -7,12 +7,12 @@ summary: How players' stats can predict the ranking a team will have at the end 
 tags:
 - Demo
 - Deep Learning
-title: Football Analytics
+title: American Football Analytics
 ---
 
 # Problem Statement
 
-Football is well-known to be a team sport, requiring the skills of a wide
+American Football is well-known to be a team sport, requiring the skills of a wide
 variety of players and careful coordination of all teammates. The ultimate
 goal of the team is to win as many games as possible, hopefully becoming
 the top team in all of college football. But how do the stats associated with
@@ -66,6 +66,7 @@ the season's final outcome.
 
 ## 1. Clean data
 - 1) Clean ESPN NCAAF Team Leader Data
+- 2) Group teams into respective conferences
 
 ```
 conferencedata = pd.read_csv('NCAAF Team Leaders_2018.csv')
@@ -471,7 +472,7 @@ conf = conf.rename(columns={"y": "top25"})
 conf.plot.bar(stacked=True)
 ```
 
-
+The below bar plot shows how each conference compares in terms of number of top 25 teams in regards to other conferences. Of particular note, Clemson, which consistently makes the playoffs, belongs to a conference that has only one other team that's a top 25 team.
 
 
     <matplotlib.axes._subplots.AxesSubplot at 0x1a190e5e90>
@@ -500,6 +501,8 @@ data2018.plot.scatter(x='QBRating', y='CompletionPercentage');
 data2018.plot.scatter(x='QBRating', y='PassingYards');
 data2018.plot.scatter(x='QBRating', y='y');
 ```
+
+According to the Shapiro-Wilk test for QBRating, AverageCompletion, and QBTouchdowns, the W-statistic of shows that it is highly likely the data is drawn from a Gaussian distribution. Additionally, the p-value is slightly higher or significantly lower than the alpha threshold of .1, indicating that it is unlikely that these results would be observed under the null hypothesis and the null hypothesis can be rejected.
 
     (0.9831368327140808, 0.10715162754058838)
     
@@ -561,6 +564,16 @@ f, ax = plt.subplots(figsize=(12, 12))
 sns.heatmap(corrmat2018, vmax=.8, square=True);
 ```
 
+Below is a heat map to see the correlation of the predictors with each other and
+the target field. While much of the broad heat map is true red (indicating nearly 
+0 correlation), there is a distinct pattern of squares, indicating significant 
+correlation between fields. This tends to indicate a single player's statistics, 
+which are highly correlated with each other. Additionally, the top left contains 
+a larger square, where the quarterback and primary receiver's statistics show high 
+levels of correlation. Finally there are two diagonal patterns above and below the 
+center diagonal in the bottom right of the chart. These are high correlations in the 
+same stats between the two defensive stats leaders evaluated; in some cases, these
+could be the same player, leading to high correlation.
 
 ![png](./6740_20su_team206_project_eda_4_0.png)
 
@@ -573,11 +586,14 @@ print(pairs2018[0:5])
 print(pairs2018)
 ```
 
+Here we can see the top five features that have the highest correlation to top 25 teams. This shows evidence that have a very good passing game is important to a teams ranking.
+
     QBTouchdowns         0.439608
     QBRating             0.420781
     PassingYards         0.408534
     AverageCompletion    0.360998
     Completions          0.344052
+
     Name: y, dtype: float64
     QBTouchdowns               0.439608
     QBRating                   0.420781
