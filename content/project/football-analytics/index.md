@@ -649,7 +649,6 @@ sns.pairplot(data2018[cols], height = 2.5)
 plt.show();
 ```
 
-
 ![png](./6740_20su_team206_project_eda_6_0.png)
 
 
@@ -662,6 +661,12 @@ box.loc[(box["top 25"] == 1),"top 25"]='top 25'
 fig = sns.catplot(x="top 25", y='QBRating', kind='box', data=box)
 ```
 
+
+It quickly became evident that QBrating, itself an aggregated score based
+on other factors, is a nice summary field and quite predictive. In the box
+plots below, we see that the 25th percentile QB rating for a top 25 team was
+still higher than the 50th percentile for a non-top 25 team, showing the dif-
+ferentiation strength in this field.
 
 ![png](./6740_20su_team206_project_eda_7_0.png)
 
@@ -758,7 +763,11 @@ fig = sns.boxplot(x='QBRating', y="conference", data=box)
 <p>130 rows × 2 columns</p>
 </div>
 
-
+To understand the combined strength of the QB rating and conference, I
+have done a combined box plot. When compared with the team's conference,
+we see the wide variation in skill level that some conferences have. The Big
+12 and Big Ten, for example, have nearly 100 point ranges for the rating,
+while Pac-12 and Sun Belt Conferences are quite compact.
 
 ![png](./6740_20su_team206_project_eda_8_1.png)
 
@@ -1156,7 +1165,32 @@ print(data2019['QBRating'].describe())
     max      206.931274
     Name: QBRating, dtype: float64
     
+# Methodology
 
+I applied a variety of techniques to the data set to determine which was the
+best differentiator of the 0/1 target, inclusion in the AP Top 25. Modeling
+techniques attempted include:
+
+- adaboost
+- decision tree
+- k nearest neighbors clustering
+- logistic regression
+- naive Bayes algorithm
+- neural network
+- random forest
+- support vector machine
+
+I set the data up such that the 2018 season was the training data set and
+the 2019 was our out of time validation. Predictive accuracy shown below is
+on the 2019 predictions, based on models created with the prior season.
+One point that I would like to make clear - I am examining correlation
+and not implying causation in this analysis. The statistics credited to any
+given player are not achieved by that player alone; a quarterback cannot put
+up large passing yardage numbers without an effective offensive line blocking
+or a wide receiver who can get open and make the play. As such, I am seeking to
+understand the ability of these statistics to predict the team's ranking, but
+am not suggesting that, absent the remaining team members, these metrics
+and therefore the team outcomes are possible.
 
 ```python
 from sklearn.neural_network import MLPClassifier
@@ -1485,3 +1519,35 @@ print("AdaBoost Accuracy:",adaboost.score(x_test, y_test))
 
     AdaBoost Accuracy: 0.8396946564885496
     
+# Evaluation and Final Results
+
+When the model of the 2018 season is used to predict the top 25 finishers
+of 2019, we find that the various techniques tested had 79-87% accuracy on
+the test sample. These results are reasonable, but not particularly strong.
+This shows that the individual stats are insufficient to generate the predictive
+power I would like.
+
+While the existing data is relatively unbiased (it contains all teams from the
+2018 season, but I have not tested if the season itself could be biased in a
+meaningful way), it is unclear if the data itself is sufficient to generate the
+results I desire. If I were to attempt to further improve the model, there
+are a number of things we could try to make a more robust training sample:
+
+- Increase sample size: It's likely that increasing the number of seasons
+used in the training would result in a more robust model being created.
+
+- Increase the breadth of data: By including other team-level statis-
+tics, I could build a stronger model. This might include strength of
+schedule statistics, win-loss records, and perhaps some information on
+coaching staff, for example.
+
+- Increase the depth of data: While I currently have statistics on 5
+players within each team, I could certainly pull some stats on the
+rest of the team and likely create additional leverage for the model.
+
+In conclusion, I was able to construct several reasonable but not incred-
+ibly powerful predictors of the top 25 finishers for a football season. Most
+techniques performed similarly, with random forest having the strongest out-
+of-time validation with 87.0% accuracy. Several data expansion recommenda-
+tions would likely improve the strength of the model and could be considered
+for future testing.
