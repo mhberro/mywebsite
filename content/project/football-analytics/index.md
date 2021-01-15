@@ -65,8 +65,16 @@ the season's final outcome.
 # Content
 
 ## 1. Clean data
-- 1) Clean ESPN NCAAF Team Leader Data
+- 1) Clean ESPN NCAAF Team Leader data
 - 2) Group teams into respective conferences
+
+## 2. Exploratory Data Analysis
+- 1) Conference top 25 vs non 25 breakdown 
+- 2) Feature distribution and significance 
+- 3) Feature correlation
+- 4) Exploratory data analysis summary
+
+## 3. Create and train models
 
 ```
 conferencedata = pd.read_csv('NCAAF Team Leaders_2018.csv')
@@ -462,7 +470,9 @@ print(data2018['QBRating'].describe())
     max      199.450623
     Name: QBRating, dtype: float64
     
+## Exploratory Data Analysis
 
+#### 1) Conference top 25 vs non 25 breakdown
 
 ```python
 conf = pd.concat([data2018['y'], rawdata2018['conference']], axis=1).groupby('conference').sum()
@@ -482,7 +492,7 @@ The below bar plot shows how each conference compares in terms of number of top 
 
 ![png](./6740_20su_team206_project_eda_1_1.png)
 
-
+#### 2) Feature distribution and significance
 
 ```python
 #sns.distplot(data['CompletionPercentage'])
@@ -502,7 +512,7 @@ data2018.plot.scatter(x='QBRating', y='PassingYards');
 data2018.plot.scatter(x='QBRating', y='y');
 ```
 
-According to the Shapiro-Wilk test for QBRating, AverageCompletion, and QBTouchdowns, the W-statistic of shows that it is highly likely the data is drawn from a Gaussian distribution. Additionally, the p-value is slightly higher or significantly lower than the alpha threshold of .1, indicating that it is unlikely that these results would be observed under the null hypothesis and the null hypothesis can be rejected.
+The W-statistic for QBRating, AverageCompletion, and QBTouchdowns, shows that it is highly likely the data is drawn from a Gaussian distribution. Additionally, the p-value is slightly higher or significantly lower than the alpha threshold of .1, indicating that it is unlikely that these results would be observed under the null hypothesis and the null hypothesis can be rejected.
 
     (0.9831368327140808, 0.10715162754058838)
     
@@ -527,14 +537,8 @@ According to the Shapiro-Wilk test for QBRating, AverageCompletion, and QBTouchd
 
 
 ![png](./6740_20su_team206_project_eda_2_6.png)
-
-
-    'c' argument looks like a single numeric RGB or RGBA sequence, which should be avoided as value-mapping will have precedence in case its length matches with 'x' & 'y'.  Please use a 2-D array with a single row if you really want to specify the same RGB or RGBA value for all points.
-    'c' argument looks like a single numeric RGB or RGBA sequence, which should be avoided as value-mapping will have precedence in case its length matches with 'x' & 'y'.  Please use a 2-D array with a single row if you really want to specify the same RGB or RGBA value for all points.
-    'c' argument looks like a single numeric RGB or RGBA sequence, which should be avoided as value-mapping will have precedence in case its length matches with 'x' & 'y'.  Please use a 2-D array with a single row if you really want to specify the same RGB or RGBA value for all points.
-    'c' argument looks like a single numeric RGB or RGBA sequence, which should be avoided as value-mapping will have precedence in case its length matches with 'x' & 'y'.  Please use a 2-D array with a single row if you really want to specify the same RGB or RGBA value for all points.
-    
-
+   
+#### 3) Feature correlation
 
 ![png](./6740_20su_team206_project_eda_2_8.png)
 
@@ -661,6 +665,7 @@ box.loc[(box["top 25"] == 1),"top 25"]='top 25'
 fig = sns.catplot(x="top 25", y='QBRating', kind='box', data=box)
 ```
 
+#### 4) Exploratory data analysis summary
 
 It quickly became evident that QBrating, itself an aggregated score based
 on other factors, is a nice summary field and quite predictive. In the box
@@ -1165,7 +1170,7 @@ print(data2019['QBRating'].describe())
     max      206.931274
     Name: QBRating, dtype: float64
     
-# Methodology
+## 3. Create and train models
 
 I applied a variety of techniques to the data set to determine which was the
 best differentiator of the 0/1 target, inclusion in the AP Top 25. Modeling
@@ -1527,6 +1532,8 @@ the test sample. These results are reasonable, but not particularly strong.
 This shows that the individual stats are insufficient to generate the predictive
 power I would like.
 
+![png](./Results.png)
+
 While the existing data is relatively unbiased (it contains all teams from the
 2018 season, but I have not tested if the season itself could be biased in a
 meaningful way), it is unclear if the data itself is sufficient to generate the
@@ -1536,8 +1543,8 @@ are a number of things we could try to make a more robust training sample:
 - Increase sample size: It's likely that increasing the number of seasons
 used in the training would result in a more robust model being created.
 
-- Increase the breadth of data: By including other team-level statis-
-tics, I could build a stronger model. This might include strength of
+- Increase the breadth of data: By including other team-level statistics, 
+I could build a stronger model. This might include strength of
 schedule statistics, win-loss records, and perhaps some information on
 coaching staff, for example.
 
@@ -1545,9 +1552,9 @@ coaching staff, for example.
 players within each team, I could certainly pull some stats on the
 rest of the team and likely create additional leverage for the model.
 
-In conclusion, I was able to construct several reasonable but not incred-
-ibly powerful predictors of the top 25 finishers for a football season. Most
+In conclusion, I was able to construct several reasonable but not incredibly 
+powerful predictors of the top 25 finishers for a football season. Most
 techniques performed similarly, with random forest having the strongest out-
-of-time validation with 87.0% accuracy. Several data expansion recommenda-
-tions would likely improve the strength of the model and could be considered
+of-time validation with 87.0% accuracy. Several data expansion recommendations 
+would likely improve the strength of the model and could be considered
 for future testing.
