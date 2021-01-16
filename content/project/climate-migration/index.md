@@ -9,9 +9,7 @@ tags:
 - Demo
 - Deep Learning
 title: Climate Migration
-btn:
-- label: Download White Paper
-  url: https://sourcethemes.com/academic/docs/install/
+slides: example
 output:
   html_document:
     keep_md: true
