@@ -77,13 +77,14 @@ the season's final outcome.
 ## 3. Create and train models
 
 
+
 ```python
 
 ```
 
-## 1. Clean data
+## Clean data
 
-- 1) Clean ESPN NCAAF Team Leader data
+#### 1) Clean ESPN NCAAF Team Leader data
 
 
 ```python
@@ -1180,7 +1181,7 @@ print(data2019['QBRating'].describe())
     max      206.931274
     Name: QBRating, dtype: float64
     
-## 3. Create and train models
+## Create and train models
 
 I applied a variety of techniques to the data set to determine which was the
 best differentiator of the 0/1 target, inclusion in the AP Top 25. Modeling
