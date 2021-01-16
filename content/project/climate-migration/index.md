@@ -21,7 +21,7 @@ Please visit https://mhberro.github.io/ to interact with the Climate Migration t
 
 Migration due to climate change is already occurring in the U.S and around the world. This can be impacted by many factors, such as recurrent flooding, rising temperature and humidity, and repeated fire outbreaks. As the pattern of climate change continues, many cities will become uninhabitable. The goal of this project is to create an interactive visualization of the effects of climate change on the U.S. over the next 50 years and recommend better areas to move to based on predicted climate values.
 
-Below is the model used to make wildfire predictions for the Climate Migration tool.
+Below the model used to make wildfire predictions for the Climate Migration tool. This model is one of a number of models used to create the overall climate index prediction for the Climate Migration app.
 
 ```python
 import pandas as pd
