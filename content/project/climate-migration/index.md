@@ -11,6 +11,7 @@ tags:
 title: Climate Migration
 btn:
 - label: Download White Paper
+  url: https://sourcethemes.com/academic/docs/install/
 output:
   html_document:
     keep_md: true
