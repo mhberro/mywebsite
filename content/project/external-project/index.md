@@ -3,7 +3,7 @@ date: "2016-04-27T00:00:00Z"
 external_link: null
 image:
   focal_point: Smart
-summary: to what extent does the connectivity of the airport network help explain in which regions we have seen the most confirmed cases of COVID-19?
+summary: To what extent does the connectivity of the airport network help explain which regions have seen the most cases of COVID-19?
 tags:
 - Demo
 title: COVID-19 AND AIRPORTS
