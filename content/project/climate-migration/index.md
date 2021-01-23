@@ -15,7 +15,7 @@ output:
     fig_caption: yes
 ---
 
-Please visit https://mhberro.github.io/ to interact with the Climate Migration tool. 
+Please visit https://mhberro.github.io/ to interact with the Climate Migration tool. Drag the "Select Year" slider to change the prediction year and click on the shaded regions to display the climate index for that region.
 
 # Problem Statement
 
