@@ -488,10 +488,6 @@ def get_path(filebase=""):
     return f"{DATA_PATH}{filebase}"
 
 def get_covid19_daily_filenames(root=get_path("data/")):
-    """
-    Returns a list of file paths corresponding to JHU's
-    daily tallies of COVID-19 cases.
-    """
     from os import listdir
     from os.path import isfile
     from re import match
