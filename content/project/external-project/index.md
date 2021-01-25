@@ -552,7 +552,7 @@ def load_covid19_daily_data(filenames):
 # Demo of the function:
 df_covid19 = load_covid19_daily_data(get_covid19_daily_filenames())
 
-print(f"There are {len(df_covid19)} rows in your data frame.")
+print(f"There are {len(df_covid19)} rows in my data frame.")
 print("The first five are:")
 display(df_covid19.head(5))
 
@@ -560,7 +560,7 @@ print("A random sample of five additional rows:")
 df_covid19.sample(5).sort_index()
 ```
 
-    There are 923171 rows in your data frame.
+    There are 923171 rows in my data frame.
     The first five are:
     
 
@@ -1566,7 +1566,7 @@ print('=== Two states: "AK" and "GA" ===')
 is_ak_ga_before = df_us_daily["ST"].isin(["AK", "GA"])
 display(df_us_daily[is_ak_ga_before])
 
-print('=== Your results (days=3) ===')
+print('=== My results (days=3) ===')
 df_us_daily_avg = daily_windowed_avg(df_us_daily, 3)
 is_ak_ga_after = df_us_daily_avg["ST"].isin(["AK", "GA"])
 display(df_us_daily_avg[is_ak_ga_after])
@@ -1672,7 +1672,7 @@ display(df_us_daily_avg[is_ak_ga_after])
 </div>
 
 
-    === Your results (days=3) ===
+    === My results (days=3) ===
     
 
 
@@ -2034,12 +2034,12 @@ def calc_state_trans_probs(flights, outdegrees):
 
 ```python
 probs = calc_state_trans_probs(flights, outdegrees)
-print(f"There are {len(probs)} state-to-state transition probabilities in your result.")
+print(f"There are {len(probs)} state-to-state transition probabilities in my result.")
 print("Here are ten with the largest transition probabilities:")
 display(probs.sort_values(by="TransProb", ascending=False).head(10))
 ```
 
-    There are 1200 state-to-state transition probabilities in your result.
+    There are 1200 state-to-state transition probabilities in my result.
     Here are ten with the largest transition probabilities:
     
 
