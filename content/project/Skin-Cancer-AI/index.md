@@ -10,8 +10,6 @@ tags:
 title: Skin Cancer AI
 ---
 
-<!DOCTYPE html>
-<meta charset="utf-8">
 <script type="text/javascript" src="../lib/d3.v5.min.js"></script>
 <style>
 
@@ -217,5 +215,4 @@ d3.dsv(",", "board_games.csv", function(d) {
 });
 
 </script>
-</body>
-</html>
+
