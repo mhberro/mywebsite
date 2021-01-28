@@ -10,4 +10,6 @@ tags:
 title: Skin Cancer AI
 ---
 
-<iframe src="graph.html"></iframe>
+```{r, echo=FALSE}
+htmltools::tags$iframe(title = "My embedded document", src = "graph.html")
+```
