@@ -10,4 +10,6 @@ tags:
 title: Skin Cancer AI
 ---
 
-<iframe src="graph.html" style="width: 200px; height: 800px; position:relative; left:-200px"></iframe>
+<div id="contentframe" style="top: 160px; left: 0px;">
+<iframe src="graph.html" style="width: 400px; height: 800px; position:relative; left:-200px"></iframe>
+</div>
