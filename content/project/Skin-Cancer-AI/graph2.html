@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<script type="text/javascript" src="../lib/d3.v5.min.js"></script>
+<script type="text/javascript" src="d3.v5.min.js"></script>
 <style>
 
 path.link {
@@ -58,7 +58,7 @@ d3.dsv(",", "board_games.csv", function(d) {
 }).then(function(data) {
     console.log(data)
   var links = data;
-
+9:28 PM 1/28/2021
   var nodes = {};
 
   // compute the distinct nodes from the links.
@@ -67,7 +67,7 @@ d3.dsv(",", "board_games.csv", function(d) {
       link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
   });
 
-  var width = 1200,
+  var width = 1000,
       height = 700;
 
   var force = d3.forceSimulation()
@@ -195,11 +195,7 @@ d3.dsv(",", "board_games.csv", function(d) {
         else if (d.weight < 8) {return "#9ecae1";}
         else {return "#3182bd";}})
   };
-      svg.append("text")
-        .attr("x", 740)
-        .attr("y", 14)
-        .text("mberro3")
-        .style("font", "17px sans-serif");
+
 }).catch(function(error) {
   console.log(error);
 });
