@@ -67,7 +67,7 @@ d3.dsv(",", "board_games.csv", function(d) {
       link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
   });
 
-  var width = 1200,
+  var width = 1100,
       height = 700;
 
   var force = d3.forceSimulation()
@@ -195,11 +195,7 @@ d3.dsv(",", "board_games.csv", function(d) {
         else if (d.weight < 8) {return "#9ecae1";}
         else {return "#3182bd";}})
   };
-      svg.append("text")
-        .attr("x", 740)
-        .attr("y", 14)
-        .text("mberro3")
-        .style("font", "17px sans-serif");
+
 }).catch(function(error) {
   console.log(error);
 });
