@@ -67,8 +67,8 @@ d3.dsv(",", "board_games.csv", function(d) {
       link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
   });
 
-  var width = 1150,
-      height = 850;
+  var width = 1175,
+      height = 875;
 
   var force = d3.forceSimulation()
       .nodes(d3.values(nodes))
