@@ -58,7 +58,7 @@ d3.dsv(",", "board_games.csv", function(d) {
 }).then(function(data) {
     console.log(data)
   var links = data;
-
+9:28 PM 1/28/2021
   var nodes = {};
 
   // compute the distinct nodes from the links.
@@ -67,8 +67,8 @@ d3.dsv(",", "board_games.csv", function(d) {
       link.target = nodes[link.target] || (nodes[link.target] = {name: link.target});
   });
 
-  var width = 1200,
-      height = 700;
+  var width = 1100,
+      height = 900;
 
   var force = d3.forceSimulation()
       .nodes(d3.values(nodes))
