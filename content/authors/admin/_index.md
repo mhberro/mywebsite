@@ -27,9 +27,7 @@ organizations:
 role: Senior Analyst/Data Scientist
 
 superuser: false
-user_groups:
-- Researchers
-- Visitors
+
 ---
 
 
