@@ -4,9 +4,7 @@ authors:
 avatar_image: user-2.jpg
 bio: My research interests include distributed robotics, mobile computing and programmable
   matter.
-btn:
-- label: Download Resume
-  url: https://sourcethemes.com/academic/docs/install/
+
 display_education: true
 education:
   courses:
@@ -28,7 +26,7 @@ organizations:
   url: ""
 role: Senior Analyst/Data Scientist
 
-superuser: true
+superuser: false
 user_groups:
 - Researchers
 - Visitors
