@@ -2,7 +2,7 @@
 authors:
 - admin
 avatar_image: user-2.jpg
-bio: My research interests include distributed robotics, mobile computing and programmable
+bio: My research interests include distributed systems, mobile computing and programmable
   matter.
 
 display_education: true
