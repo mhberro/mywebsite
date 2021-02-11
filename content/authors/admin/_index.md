@@ -26,8 +26,10 @@ organizations:
   url: ""
 role: Senior Analyst/Data Scientist
 
-superuser: false
-
+superuser: true
+user_groups:
+- Researchers
+- Visitors
 ---
 
 
