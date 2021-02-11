@@ -42,6 +42,4 @@ hero_media = "user-2.jpg"
   label = "Contact me"
 
 +++
-## My name is **Mohamed (Mo) Berro** and I'm a **Data Scientist** specializing in **Artificial Intelligence**
-
-My passion is in building models 
+## My name is **Mohamed (Mo) Berro** and I'm a **Data Scientist** specializing in **Machine Learning**
