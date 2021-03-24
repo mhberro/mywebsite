@@ -26,7 +26,7 @@ name: Mo Berro
 organizations:
 - name: Health Management Systems
   url: ""
-role: Senior Analyst/Data Scientist
+role: Senior Developer and Data Analyst
 
 superuser: true
 user_groups:
