@@ -16,10 +16,12 @@ education:
     year: 2008
 email: ""
 interests:
+- Software and Data Engineering
+- SQL Query Tuning
 - Deep Learning
 - Network Based Algorithms
 - Machine Learning 
-- Software and Data Engineering
+
 name: Mo Berro
 organizations:
 - name: Health Management Systems
