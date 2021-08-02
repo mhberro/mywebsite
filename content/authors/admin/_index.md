@@ -8,7 +8,7 @@ bio: My research interests include distributed systems, mobile computing and pro
 display_education: true
 education:
   courses:
-  - course: MEng in Data Science 
+  - course: MEng in Analytics (Data Science)
     institution: Georgia Institute of Technology
     year: 2021
   - course: BSEng in Electrical Engineering

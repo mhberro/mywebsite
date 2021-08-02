@@ -1,0 +1,61 @@
+Create storage buckets on S3
+
+We're going to need S3 for two reasons:
+1) An EMR (Elastic MapReduce) workflow requires the input data to be on S3
+2) An EMR workflow output is always saved to S3
+
+In S3, data (or objects) are stored in what we call "buckets". These buckets are like folders. Here we're going to create buckets with unique names. The buckets created will (1) store the EMR output; and (2) store the log files used to help debug EMR runs. Let's start by creating the log bucket first.
+
+1. In the AWS Management Console click on S3 (bold) under All services (bold) -> Storage (bold)
+In the S3 console, click on Create Bucket
+
+Create Storage Bucket.png
+
+2. Create a logging bucket: Click Create Bucket (bold) after entering the details shown below
+
+Create Logging Bucket.png
+
+3. A new bucket will appear in the S3 console
+
+4. Create the main bucket: Click Create Bucket (bold) after entering the details shown below
+
+Create Main Bucket.png
+
+5. Now let's link our logging bucket to the one we are creating now, so on the Bucket area click on the main bucket that was created (taxi-cab-moberro) and select the Properties tab. Then in the "Server access logging" section click Edit (bold). 
+
+Server Access Logging.png
+
+6. Here we'll enable server access logging and select the logging bucket we created (taxi-cab-moberro-logging) and then click Save Changes (bold).
+
+Choose Server Access Logging.png
+
+Launch a Notebook
+
+This section will cover launching a Notebook in Amazon EMR.
+
+1. Go to Amazon EMR and select notebooks. Click "Create Notebook"
+
+Create New Notebook.png
+
+2. Now fill out the configuration fields:
+	a. Give the notebook a name.
+	b. Select the checkbox to Create a cluster
+	c. For instance type (underline) select m5.xlarge (bold). We can also change the number of instances (underline) used, so let's select 4 (bold). There are other instance types and numbers of clusters that can be selected to see the impact on performance, however many of these are not eligible to be used on a starter account (which is what is being used)
+	d. For AWS service role (underline), select EMR_Notebooks_DefaultRole (bold). Each EMR notebook requires permissions to access other AWS resources. The IAM policies attached to this service role allows the notebook to interoperate with other AWS services.
+	e. For Notebook location (underline), select the S3 bucket we created earlier
+
+Getting started with Taxi Cab analysis
+
+In this section we will begin analyzing taxi cab data
+
+1. Once the notebook has finished instantiating, click "Open in JuptyerLab"
+
+2. Double-click the notebook in the left pane. Here we're given the option to Select a kernel, choose PySpark. Now we have our starting environment to begin coding...
+
+Choose Kernel.png
+
+Beginning Environment.png
+
+2. Now let's type sc (bold) in the first cell and run it. This should start the Spark Application so we can start programming.
+
+Starting Spark Application.png
