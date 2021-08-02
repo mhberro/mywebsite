@@ -4,6 +4,7 @@ Home Page
 	Experience section: content->home->experience
 	header section: config -> menus
 	main photo: public -> img
+	secondary photo: static -> img
 
 
 artificial-intelligence -> climate-migration
