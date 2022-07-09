@@ -18,12 +18,32 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
+  title = "Database Engineer"
+  company = "Aristocrat"
+  company_url = "www.aristocrat.com"
+  location = "Las Vegas, Nevada"
+  date_start = "2021-05-01"
+  date_end = ""
+  description = """
+  A global gaming technology company
+  Achievements:
+  
+Configured customer web servers using Internet Information Services (IIS) to allow Aristocrat applications to 
+communicate with customer databases 
+  * Installed, configured, and tested network load balancers (NLB) on property servers to evenly distribute netwo rk 
+traffic across multiple hosts, ensuring there’s no single point of failure 
+  * Designed, updated, and implemented custom SQL Maintenance Plans using SQL Server Agent and TSQL
+  * Created Powershell scripts to help automate the configuration of servers, such as disable Http2 and configure 
+MSDTC
+
+
+[[experience]]
   title = "Senior Developer and Analyst"
   company = "HMS"
   company_url = "www.hms.com"
   location = "Las Vegas, Nevada"
   date_start = "2013-08-01"
-  date_end = ""
+  date_end = "2021-05-01"
   description = """
   A healthcare services company that identifies and recoups overpayments to providers
   Achievements:
