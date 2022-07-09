@@ -10,7 +10,7 @@ education:
   courses:
   - course: MEng in Analytics (Data Science)
     institution: Georgia Institute of Technology
-    year: 2021
+    year: 2023
   - course: BSEng in Electrical Engineering
     institution: University of Nevada, Reno
     year: 2008
@@ -24,9 +24,9 @@ interests:
 
 name: Mo Berro
 organizations:
-- name: Health Management Systems
+- name: Aristocrat
   url: ""
-role: Senior Developer and Data Analyst
+role: Database Engineer
 
 superuser: true
 user_groups:
