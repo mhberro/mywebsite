@@ -37,6 +37,6 @@ user_groups:
 
 Mo Berro has over 12 years of professional experience, including 8+ years of work experience in software engineering, 8+ years with enterprise databases and data warehouse management and query languages, 5+ years in cloud computing, 5+ years in advanced analytics, and 4+ years in a leadership capacity.
 
-
+![reviews](../../img/certifacates.jpg)
 
 
