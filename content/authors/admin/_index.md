@@ -39,12 +39,12 @@ Mo Berro has over 12 years of professional experience, including 8+ years of wor
 
 <div class="row">
   <div class="column">
-    <a href="https://www.credly.com/badges/d4b5a464-3331-4da0-bd5f-2d394e650ee9/public_url" target="_blank"><img src="../../../img/aws-certified-developer-associate.png"></a>
+    <a href="https://www.credly.com/badges/97ceeae8-6518-42b8-8b4f-203759065223/public_url" target=_blank><img src="../../../img/aws-certified-cloud-practitioner.png"></a>
   </div>
   <div class="column">
     <a href="https://www.credly.com/badges/d4b5a464-3331-4da0-bd5f-2d394e650ee9/public_url" target="_blank"><img src="../../../img/aws-certified-developer-associate.png"></a>
   </div>
   <div class="column">
-    <img src="../../../img/aws-certified-developer-associate.png">
+    <a href="https://www.credly.com/badges/792fcc17-d4ab-44d5-8be7-98c521045bb0/public_url" target="_blank"><img src="../../../img/aws-certified-solutions-architect-associate.png"></a>
   </div>
 </div>
