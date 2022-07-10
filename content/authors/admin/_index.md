@@ -21,13 +21,6 @@ interests:
 - Deep Learning
 - Network Based Algorithms
 - Machine Learning 
-
-<div class="row">
-  <div class="column">
-    <img src="../../../img/aws-certified-developer-associate.png">
-  </div>
-</div>
-
  
 name: Mo Berro
 organizations:
