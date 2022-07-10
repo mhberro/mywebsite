@@ -35,6 +35,7 @@ traffic across multiple hosts, ensuring there’s no single point of failure
   * Designed, updated, and implemented custom SQL Maintenance Plans using SQL Server Agent and TSQL
   * Created Powershell scripts to help automate the configuration of servers, such as disable Http2 and configure 
 MSDTC
+ """
 
 
 [[experience]]
