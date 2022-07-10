@@ -40,5 +40,5 @@ Mo Berro has over 12 years of professional experience, including 8+ years of wor
 [image]
 
 ![reviews](../../../img/certifacates.jpg)
-  <p>"https://www.coursera.org/account/accomplishments/verify/DSGGYY4VA4S5"</p>
+  <a href="https://google.com"><img src="../../../img/certifacates.jpg"></a>
 
