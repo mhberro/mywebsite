@@ -22,6 +22,18 @@ interests:
 - Network Based Algorithms
 - Machine Learning 
 
+<div class="row">
+  <div class="column">
+    <img src="../../../img/aws-certified-developer-associate.png" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img_forest.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
   <div><a href="https://www.credly.com/badges/d4b5a464-3331-4da0-bd5f-2d394e650ee9/public_url" target="_blank"><img src="../../../img/aws-certified-developer-associate.png"></a></div>
 
 name: Mo Berro
