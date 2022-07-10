@@ -39,6 +39,6 @@ Mo Berro has over 12 years of professional experience, including 8+ years of wor
 
 <div class="row">
   <div class="column">
-    <img src="../../../img/aws-certified-developer-associate.png">
+    <a href="https://www.credly.com/badges/d4b5a464-3331-4da0-bd5f-2d394e650ee9/public_url" target="_blank"><img src="../../../img/aws-certified-developer-associate.png"></a>
   </div>
 </div>
