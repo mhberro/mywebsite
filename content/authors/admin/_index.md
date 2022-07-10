@@ -27,7 +27,7 @@ interests:
     <img src="../../../img/aws-certified-developer-associate.png" alt="Snow" style="width:100%">
   </div>
   <div class="column">
-    <img src="img_forest.jpg" alt="Forest" style="width:100%">
+    <img src="../../../img/aws-certified-developer-associate.png" alt="Forest" style="width:100%">
   </div>
   <div class="column">
     <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
