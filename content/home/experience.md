@@ -49,15 +49,13 @@ MSDTC
   A healthcare services company that identifies and recoups overpayments to providers
   Achievements:
   
-  * Currently building the infrastructure to automate the ingestion and transformation of data from an Azure
-Data Lake Store into HMS servers using the Azure-SSIS integration runtime in Azure Data Factory
+  * Built an ETL pipeline that ingested and transformed 1 billion rows of data monthly from an Azure Data Lake Store into HMS servers using Azure Data Factory
+  * Programmed a healthcare graphical model using Spark and Scala that performs a random walk with restart (RWR) algorithm on the graph to find patients with the most similarities to a target patient
   * Provided subject matter expertise on six separate MSSQL subsystems responsible for onboarding client data to different
 HMS data warehouses that, combined, account for approximately 40% of HMS’s total revenue stream
   * Streamlined and automated an ETL process, using SSIS and performance centric SQL programming paradigms, that onboards data from HMS clients into HMS servers, reducing previous load times by 75%
   * Provided multiple database performance tuning and optimization lectures to developers in a classroom setting, providing an in-depth view of clustered and nonclustered indexes from a data structure perspective along with other SQL Server insights
-  * Initiated, designed, created, tested, and deployed company-wide a WPF software application that’s written in C#
-and uses an MVVM design pattern that links to SQL Server databases using Entity Framework and displays data via
-XAML, reducing each employee’s man hours by 50 hours/week
+  * Self-Initiated, designed, created, tested, and deployed company-wide a WPF application, using C# and SQL, that grants vetted users the ability to update healthcare claim data without writing SQL queries, reducing each programmer’s hours by 65%
   * Led an initiative with multiple departments to architect a claim tracking system that provides account managers with a MicroStrategy dashboard detailing the movement of claim data throughout HMS servers, providing business with a layer of transparency that drastically reduced client abrasion
   * Built, using Python and sklearn, a network-based model that uses the Louvain algorithm and Markov chain to create communities of super
 nodes consisting of high-risk claims, ranking the network of claims according to a measure each claim’s steady-state
@@ -76,7 +74,7 @@ probability
   description = """
   Achievements:
   * Designed and developed as chief engineer for a high-profile project a dual simplex algorithm that reduced the processing time of a fighter jet’s onboard systems by 20% and improved asset recognition by 25%, reducing maintenance costs by 15%
-  * Interviewed high ranking military officers and led a team of five programmers to design and develop new functionality for a $500K software, leading to challenge coin award from a commander for recognition in enhancing user productivity by 400%
+  * Interviewed high ranking military officers and led a team of five programmers to design and develop new functionality for a $500K software, leading to challenge coin award from a commander for recognition in enhancing user productivity by 200%
   * Designed and documented software architecture for three different software improvements and conducted peer reviews with team to identify potential design flaws within two months
   * Negotiated a $60K contract extension for software enhancements by forging relationships with division heads and collaborating cross functionally with lead engineers, resulting in performance improvements of 15% and operability on four defense platforms
   * Oversaw integration of a $250K instrument to automate outdoor test ranges and provided Congressional Demonstrations to gain project recognition, resulting in a 30% increase in test accuracy, 25% decrease in test time, and 15% decrease in test costs
