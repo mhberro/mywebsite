@@ -49,13 +49,13 @@ MSDTC
   A healthcare services company that identifies and recoups overpayments to providers
   Achievements:
   
-  * Built an ETL pipeline that ingested and transformed 1 billion rows of data monthly from an Azure Data Lake Store into HMS servers using Azure Data Factory
-  * Programmed a healthcare graphical model using Spark and Scala that performs a random walk with restart (RWR) algorithm on the graph to find patients with the most similarities to a target patient
+  * Programmed a healthcare graphical model using Azure Databricks, Spark, and Scala that performs a random walk with restart (RWR) algorithm on the graph to find patients with the most similarities to a target patient
+  * Built a document store that used Azure Data Factory to ingest 50 million unstructured clinical notes weekly from multiple data sources into an Azure Data Lake Store
+  * Streamlined and automated an ETL process, using SSIS and performance centric SQL programming paradigms, that onboards data from HMS clients into HMS servers, reducing previous load times by 75%
+  * Self-Initiated, designed, created, tested, and deployed company-wide a WPF application, using C# and SQL, that grants vetted users the ability to update healthcare claim data without writing SQL queries, reducing each programmer’s hours by 65%
   * Provided subject matter expertise on six separate MSSQL subsystems responsible for onboarding client data to different
 HMS data warehouses that, combined, account for approximately 40% of HMS’s total revenue stream
-  * Streamlined and automated an ETL process, using SSIS and performance centric SQL programming paradigms, that onboards data from HMS clients into HMS servers, reducing previous load times by 75%
   * Provided multiple database performance tuning and optimization lectures to developers in a classroom setting, providing an in-depth view of clustered and nonclustered indexes from a data structure perspective along with other SQL Server insights
-  * Self-Initiated, designed, created, tested, and deployed company-wide a WPF application, using C# and SQL, that grants vetted users the ability to update healthcare claim data without writing SQL queries, reducing each programmer’s hours by 65%
   * Led an initiative with multiple departments to architect a claim tracking system that provides account managers with a MicroStrategy dashboard detailing the movement of claim data throughout HMS servers, providing business with a layer of transparency that drastically reduced client abrasion
   * Built, using Python and sklearn, a network-based model that uses the Louvain algorithm and Markov chain to create communities of super
 nodes consisting of high-risk claims, ranking the network of claims according to a measure each claim’s steady-state
