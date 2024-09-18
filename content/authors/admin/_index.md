@@ -10,7 +10,7 @@ education:
   courses:
   - course: MEng in Analytics (Data Science)
     institution: Georgia Institute of Technology
-    year: 2021
+    year: 2023
   - course: BSEng in Electrical Engineering
     institution: University of Nevada, Reno
     year: 2008
@@ -21,12 +21,12 @@ interests:
 - Deep Learning
 - Network Based Algorithms
 - Machine Learning 
-
+ 
 name: Mo Berro
 organizations:
-- name: Health Management Systems
+- name: Aristocrat
   url: ""
-role: Senior Developer and Data Analyst
+role: Database Engineer
 
 superuser: true
 user_groups:
@@ -35,8 +35,18 @@ user_groups:
 ---
 
 
-Mo Berro is a data scientist with over 11 years of professional experience, including 7+ years of work experience in software engineering, 7+ years with enterprise databases and data warehouse management and query languages, 4+ years in cloud computing, 4+ years in advanced analytics, and 3+ years in a leadership capacity.
+Mo Berro has over 12 years of professional experience, including 8+ years of work experience in software engineering, 8+ years with enterprise databases and data warehouse management and query languages, 5+ years in cloud computing, 5+ years in advanced analytics, and 4+ years in a leadership capacity.
 
 
-
+<div class="row">
+  <div class="column">
+    <div class="image"><a href="https://www.credly.com/badges/97ceeae8-6518-42b8-8b4f-203759065223/public_url" target=_blank><img src="../../../img/aws-certified-cloud-practitioner.png"></a></div>
+  </div>
+  <div class="column">
+    <a href="https://www.credly.com/badges/d4b5a464-3331-4da0-bd5f-2d394e650ee9/public_url" target="_blank"><img src="../../../img/aws-certified-developer-associate.png"></a>
+  </div>
+  <div class="column">
+    <a href="https://www.credly.com/badges/792fcc17-d4ab-44d5-8be7-98c521045bb0/public_url" target="_blank"><img src="../../../img/aws-certified-solutions-architect-associate.png"></a>
+  </div>
+</div>
 
