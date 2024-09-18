@@ -10,23 +10,24 @@ education:
   courses:
   - course: MEng in Analytics (Data Science)
     institution: Georgia Institute of Technology
-    year: 2023
+    year: 2024
   - course: BSEng in Electrical Engineering
     institution: University of Nevada, Reno
     year: 2008
 email: ""
 interests:
+- Machine Learning and Deep Learning
+- Network Based Algorithms
 - Software and Data Engineering
 - SQL Query Tuning
-- Deep Learning
-- Network Based Algorithms
-- Machine Learning 
+
+
  
 name: Mo Berro
 organizations:
-- name: Aristocrat
+- name: ""
   url: ""
-role: Database Engineer
+role: Machine Learning Engineer
 
 superuser: true
 user_groups:

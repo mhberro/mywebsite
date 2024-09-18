@@ -40,4 +40,4 @@ hero_media = "user-2.jpg"
   label = "Contact me"
 
 +++
-## My name is **Mohamed (Mo) Berro** and I'm passionate about data, specializing in **Distributed Systems**, **Machine Learning**, and **Numerical Computation**
+## My name is **Mohamed (Mo) Berro** and I'm passionate about data, specializing in **Machine Learning**, **Distributed Systems**, and **Numerical Computation**
