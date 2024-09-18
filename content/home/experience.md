@@ -12,6 +12,12 @@ subtitle = ""
 #   Refer to https://sourcethemes.com/academic/docs/customization/#date-format
 date_format = "Jan 2006"
 
+# Experiences.
+#   Add/remove as many `[[experience]]` blocks below as you like.
+#   Required fields are `title`, `company`, and `date_start`.
+#   Leave `date_end` empty if it's your current employer.
+#   Begin/end multi-line descriptions with 3 quotes `"""`.
+
 [[experience]]
   title = "Senior Data Engineer"
   company = "XLMedia"
@@ -32,11 +38,6 @@ Achievements:
   * Architected a scalable parallel processing data pipeline using AWS Fargate ECR, and Lambda that securely loaded data from multiple disparate sources to Snowflake
   * Managed the data lifecycle and governance by focusing on security, dataops, orchestration, data architecture, and data management
 
-# Experiences.
-#   Add/remove as many `[[experience]]` blocks below as you like.
-#   Required fields are `title`, `company`, and `date_start`.
-#   Leave `date_end` empty if it's your current employer.
-#   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
   title = "Database Engineer III"
   company = "Aristocrat"
