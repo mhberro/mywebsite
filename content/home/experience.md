@@ -12,6 +12,26 @@ subtitle = ""
 #   Refer to https://sourcethemes.com/academic/docs/customization/#date-format
 date_format = "Jan 2006"
 
+[[experience]]
+  title = "Senior Data Engineer"
+  company = "XLMedia"
+  company_url = "www.xlmedia.com"
+  location = "Remote"
+  date_start = "2022-09-01"
+  date_end = "2024-03-01"
+  description = """
+  XLMedia is an international sports media company
+
+Achievements:
+
+  * Designed and developed a pipeline creation and management microservice solution using AWS, Airflow, and Django that provides a visual interface for interactively assembling robust, customizable and scalable pipelines
+  * Leveraged Terraform and Github Actions to implement a CI/CD solution that automatically builds, tests, and deploys Terraform infrastructure changes to an AWS environment, reducing deployment times by 47%
+  * Led the development of a continuous intelligence analytics product that uses AWS Kinesis, Firehose, and SageMaker to track a website visitor's activity and perform predictive analytics, determining the visitor's next action with 78% accuracy
+  * Engaged with international executives to present a large-scale redesign of a critical and monolithic ETL billing process, leading to approval of the proposal, successful implementation of the design, and a reduction in processing time of 86%
+  * Enhanced the billing system in Snowflake by implementing data clustering on tables with high clustering depth and leveraging Streams and Tasks to integrate a table-driven and fully automated error processing engine, reducing processing time by 86%, and error-rate by 35%
+  * Architected a scalable parallel processing data pipeline using AWS Fargate ECR, and Lambda that securely loaded data from multiple disparate sources to Snowflake
+  * Managed the data lifecycle and governance by focusing on security, dataops, orchestration, data architecture, and data management
+
 # Experiences.
 #   Add/remove as many `[[experience]]` blocks below as you like.
 #   Required fields are `title`, `company`, and `date_start`.
@@ -25,7 +45,7 @@ date_format = "Jan 2006"
   date_start = "2021-05-01"
   date_end = "2021-11-01"
   description = """
-  A global gaming technology company
+  Aristocrat is a global gaming technology company
   
 Achievements:
   
@@ -47,8 +67,9 @@ MSDTC
   date_start = "2013-08-01"
   date_end = "2021-05-01"
   description = """
-  A healthcare services company that identifies and recoups overpayments to providers
-  Achievements:
+  HMS is a healthcare services company that identifies and recoups overpayments to providers
+ 
+Achievements:
   
   * Programmed a healthcare graphical model using Azure Databricks, Spark, and Scala that performs a random walk with restart (RWR) algorithm on the graph to find patients with the most similarities to a target patient
   * Built a document store that used Azure Data Factory to ingest 50 million unstructured clinical notes weekly from multiple data sources into an Azure Data Lake Store
