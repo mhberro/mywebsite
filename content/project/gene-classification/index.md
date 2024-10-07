@@ -1295,7 +1295,7 @@ fig, ax = plot_confusion_matrix(conf_mat=multiclass,
 
 
     
-![png](DL_New_Data_files/DL_New_Data_35_0.png)
+![png](./DL_New_Data_35_0.png)
     
 
 
@@ -1359,7 +1359,7 @@ fig, ax = plot_confusion_matrix(conf_mat=multiclass,
 
 
     
-![png](DL_New_Data_files/DL_New_Data_37_0.png)
+![png](./DL_New_Data_37_0.png)
     
 
 
@@ -1425,7 +1425,7 @@ fig, ax = plot_confusion_matrix(conf_mat=multiclass,
 
 
     
-![png](DL_New_Data_files/DL_New_Data_39_0.png)
+![png](./DL_New_Data_39_0.png)
     
 
 
@@ -1489,7 +1489,7 @@ fig, ax = plot_confusion_matrix(conf_mat=multiclass,
 
 
     
-![png](DL_New_Data_files/DL_New_Data_41_0.png)
+![png](./DL_New_Data_41_0.png)
     
 
 
@@ -1555,7 +1555,7 @@ fig, ax = plot_confusion_matrix(conf_mat=multiclass,
 
 
     
-![png](DL_New_Data_files/DL_New_Data_43_0.png)
+![png](./DL_New_Data_43_0.png)
     
 
 
@@ -1616,7 +1616,7 @@ plt.show()
 
 
     
-![png](DL_New_Data_files/DL_New_Data_45_0.png)
+![png](./DL_New_Data_45_0.png)
     
 
 
@@ -1639,7 +1639,7 @@ plt.show()
 
 
     
-![png](DL_New_Data_files/DL_New_Data_46_0.png)
+![png](./DL_New_Data_46_0.png)
     
 
 
@@ -1662,7 +1662,7 @@ plt.show()
 
 
     
-![png](DL_New_Data_files/DL_New_Data_47_0.png)
+![png](./DL_New_Data_47_0.png)
     
 
 
@@ -1685,7 +1685,7 @@ plt.show()
 
 
     
-![png](DL_New_Data_files/DL_New_Data_48_0.png)
+![png](./DL_New_Data_48_0.png)
     
 
 
@@ -1721,7 +1721,7 @@ plt.show()
 
 
     
-![png](DL_New_Data_files/DL_New_Data_50_0.png)
+![png](./DL_New_Data_50_0.png)
     
 
 
@@ -1759,7 +1759,7 @@ plt.show()
 
 
     
-![png](DL_New_Data_files/DL_New_Data_52_0.png)
+![png](./DL_New_Data_52_0.png)
     
 
 
@@ -1797,7 +1797,7 @@ plt.show()
 
 
     
-![png](DL_New_Data_files/DL_New_Data_54_0.png)
+![png](./DL_New_Data_54_0.png)
     
 
 
@@ -1837,7 +1837,7 @@ plt.show()
 
 
     
-![png](DL_New_Data_files/DL_New_Data_56_0.png)
+![png](./DL_New_Data_56_0.png)
     
 
 
@@ -1876,7 +1876,7 @@ plt.show()
 
 
     
-![png](DL_New_Data_files/DL_New_Data_58_0.png)
+![png](./DL_New_Data_58_0.png)
     
 
 
@@ -1912,6 +1912,6 @@ plt.show()
 
 
     
-![png](DL_New_Data_files/DL_New_Data_60_0.png)
+![png](./DL_New_Data_60_0.png)
     
 
