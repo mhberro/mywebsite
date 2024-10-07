@@ -1232,7 +1232,7 @@ fig, ax = plot_confusion_matrix(conf_mat=multiclass,
 
 
     
-![png](DL_New_Data_files/DL_New_Data_33_0.png)
+![png](./DL_New_Data_33_0.png)
     
 
 
