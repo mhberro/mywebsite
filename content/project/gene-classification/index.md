@@ -1,3 +1,32 @@
+---
+date: "2016-04-27T00:00:00Z"
+external_link: null
+image:
+  caption: Photo by Mo Berro
+  focal_point: Smart
+summary: Using machine learning to predict climate change for climate migrators.
+tags:
+- Demo
+- Deep Learning
+title: Climate Migration
+output:
+  html_document:
+    keep_md: true
+    fig_caption: yes
+---
+
+Please visit https://mhberro.github.io/ to interact with the Climate Migration tool. Drag the "Select Year" slider to change the prediction year and click on the shaded regions to display the climate index for that region.
+
+# Problem Statement
+
+Migration due to climate change is already occurring in the U.S and around the world. This can be impacted by many factors, such as recurrent flooding, rising temperature and humidity, and repeated fire outbreaks. As the pattern of climate change continues, many cities will become uninhabitable. The goal of this project is to create an interactive visualization of the effects of climate change on the U.S. over the next 50 years and recommend better areas to move to based on predicted climate values.
+
+# Data
+
+I was able to retrieve the climate data by scraping it from the National Oceanic and Atmospheric Administration (NOAA) API. The NOAA database has daily climate information dating back to the 1950s for differenct zip codes. I initially planned to scrape all 42,000 zip codes in the U.S for climate data, but the NOAA API has a stict limit on requests per day, and it would take roughly 25,500 days to scrape for each zip code. Instead, I used a subset of 1000 zip codes, using the first three digits, which represent the zip code prefix, to get all the regions in the U.S. Climate data is regional, but doesn't change drastically within small regions. This allows me to get an approximation of the climate data for all the zips by using a smaller (but still quite large), more manageable subset. The total amount of data is over 70 million records that is stored in MySQL on an EC2 instance in AWS.
+
+Below is the model used to make wildfire predictions for the Climate Migration tool. This model is one of a number of models used to create the overall climate index prediction for the Climate Migration app. The data was obtained from scraping the National Oceanic and Atmospheric Administration (NOAA) website. 
+
 ```python
 import torch
 import torch.nn as nn
