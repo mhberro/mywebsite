@@ -8,7 +8,7 @@ summary: Using machine learning to predict climate change for climate migrators.
 tags:
 - Demo
 - Deep Learning
-title: Climate Migration
+title: Deep Learning in Genomics Research
 output:
   html_document:
     keep_md: true
