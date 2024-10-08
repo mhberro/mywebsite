@@ -4,28 +4,36 @@ external_link: null
 image:
   caption: Photo by Mo Berro
   focal_point: Smart
-summary: Using machine learning to predict climate change for climate migrators.
+summary: An analysis of Deep Learning approaches for gene type classification.
 tags:
 - Demo
 - Deep Learning
-title: Deep Learning in Genomics Research
+title: Deep Learning in Gene Classification
 output:
   html_document:
     keep_md: true
     fig_caption: yes
 ---
 
-Please visit https://mhberro.github.io/ to interact with the Climate Migration tool. Drag the "Select Year" slider to change the prediction year and click on the shaded regions to display the climate index for that region.
-
 # Problem Statement
 
-Migration due to climate change is already occurring in the U.S and around the world. This can be impacted by many factors, such as recurrent flooding, rising temperature and humidity, and repeated fire outbreaks. As the pattern of climate change continues, many cities will become uninhabitable. The goal of this project is to create an interactive visualization of the effects of climate change on the U.S. over the next 50 years and recommend better areas to move to based on predicted climate values.
+Traditionally, gene classification is approached through various biological and computational methods, including manual annotation and simpler machine learning models that often require extensive preprocessing of data [4]. Current computational methods leverage sequence alignment and statistical models to predict gene functions, but they struggle with the vast variability and complexity of genomic data [5]. These methods are often limited by their inability to process large datasets efficiently and may not capture the intricate patterns within DNA sequences that deep learning models are potentially capable of [6]. Recently, Magnusson et al. used DNNs to identify gene-regulating sequences, and reported to found 125 ”core” sequences that
+the DNN models identified, which was previoulsy thought to be around 1600 different gene sequences [7]. Zhang. et al. recently published a deep-learning model DeepHe to predict gene sequences, which had some improved performance
+compared to previous ML models but still lagged behind tradional gene annotting methods [8]. Thus, although progress is being made to implement deep learning models in the processing of genetic data and specifically gene prediction, we are still far from having deep learning models replace traditional manul annotation methods. This project aims to facilitate a deeper understanding of genetic structures across different species—humans, chimpanzees, and dogs—and identify the distinctive genetic markers that define them.
 
 # Data
 
-I was able to retrieve the climate data by scraping it from the National Oceanic and Atmospheric Administration (NOAA) API. The NOAA database has daily climate information dating back to the 1950s for differenct zip codes. I initially planned to scrape all 42,000 zip codes in the U.S for climate data, but the NOAA API has a stict limit on requests per day, and it would take roughly 25,500 days to scrape for each zip code. Instead, I used a subset of 1000 zip codes, using the first three digits, which represent the zip code prefix, to get all the regions in the U.S. Climate data is regional, but doesn't change drastically within small regions. This allows me to get an approximation of the climate data for all the zips by using a smaller (but still quite large), more manageable subset. The total amount of data is over 70 million records that is stored in MySQL on an EC2 instance in AWS.
+The gene sequences are classified into 7 distinct classes and the countsf for each class can be found in Table 1. To prepare DNA sequences for the DL models, two crucial preprocessing steps were implemented: padding and one-hot encoding. Here’s a brief description of the methods used:
 
-Below is the model used to make wildfire predictions for the Climate Migration tool. This model is one of a number of models used to create the overall climate index prediction for the Climate Migration app. The data was obtained from scraping the National Oceanic and Atmospheric Administration (NOAA) website. 
+### 1. Determination of Maximum Sequence Length: 
+	The length of the longest DNA sequence in the dataset was first identified to establish a uniform sequence length across all samples. This uniformity is crucial for ensuring consistent input size for the neural network.
+
+### 2. One-Hot Encoding and Padding: 
+Each nucleotide in a DNA sequence was converted into a one-hot encoded
+format. In this encoding scheme, nucleotides are represented as four-dimensional vectors: adenine (A) as [1, 0, 0, 0], thymine (T) as [0, 1, 0, 0], cytosine (C) as [0, 0, 1, 0], and guanine (G) as [0, 0, 0, 1]. For sequences
+shorter than the established maximum length, zero padding was added to the end of the encoded sequence to achieve the required length. 
+
+### 3. Application of Encoding and Padding: This encoding and padding process was applied across all DNA sequences in the dataset, transforming each sequence into a uniformly sized array of one-hot encoded nucleotides, padded as necessary to accommodate variations in the original sequence lengths. This methodology ensures that the neural network receives well-structured and uniform inputs, maintaining the integrity of the biological information in the sequences.
 
 ```python
 import torch
