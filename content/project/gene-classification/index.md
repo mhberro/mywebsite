@@ -2,7 +2,6 @@
 date: "2016-04-27T00:00:00Z"
 external_link: null
 image:
-  caption: Photo by Mo Berro
   focal_point: Smart
 summary: An analysis of Deep Learning approaches for gene type classification.
 tags:
@@ -26,14 +25,15 @@ compared to previous ML models but still lagged behind tradional gene annotting 
 The gene sequences are classified into 7 distinct classes and the countsf for each class can be found in Table 1. To prepare DNA sequences for the DL models, two crucial preprocessing steps were implemented: padding and one-hot encoding. Here’s a brief description of the methods used:
 
 ### 1. Determination of Maximum Sequence Length: 
-	The length of the longest DNA sequence in the dataset was first identified to establish a uniform sequence length across all samples. This uniformity is crucial for ensuring consistent input size for the neural network.
+The length of the longest DNA sequence in the dataset was first identified to establish a uniform sequence length across all samples. This uniformity is crucial for ensuring consistent input size for the neural network.
 
 ### 2. One-Hot Encoding and Padding: 
 Each nucleotide in a DNA sequence was converted into a one-hot encoded
 format. In this encoding scheme, nucleotides are represented as four-dimensional vectors: adenine (A) as [1, 0, 0, 0], thymine (T) as [0, 1, 0, 0], cytosine (C) as [0, 0, 1, 0], and guanine (G) as [0, 0, 0, 1]. For sequences
 shorter than the established maximum length, zero padding was added to the end of the encoded sequence to achieve the required length. 
 
-### 3. Application of Encoding and Padding: This encoding and padding process was applied across all DNA sequences in the dataset, transforming each sequence into a uniformly sized array of one-hot encoded nucleotides, padded as necessary to accommodate variations in the original sequence lengths. This methodology ensures that the neural network receives well-structured and uniform inputs, maintaining the integrity of the biological information in the sequences.
+### 3. Application of Encoding and Padding: 
+This encoding and padding process was applied across all DNA sequences in the dataset, transforming each sequence into a uniformly sized array of one-hot encoded nucleotides, padded as necessary to accommodate variations in the original sequence lengths. This methodology ensures that the neural network receives well-structured and uniform inputs, maintaining the integrity of the biological information in the sequences.
 
 ```python
 import torch
