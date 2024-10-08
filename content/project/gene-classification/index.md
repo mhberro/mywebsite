@@ -18,11 +18,76 @@ output:
 
 Traditionally, gene classification is approached through various biological and computational methods, including manual annotation and simpler machine learning models that often require extensive preprocessing of data [4]. Current computational methods leverage sequence alignment and statistical models to predict gene functions, but they struggle with the vast variability and complexity of genomic data [5]. These methods are often limited by their inability to process large datasets efficiently and may not capture the intricate patterns within DNA sequences that deep learning models are potentially capable of [6]. Recently, Magnusson et al. used DNNs to identify gene-regulating sequences, and reported to found 125 ”core” sequences that
 the DNN models identified, which was previoulsy thought to be around 1600 different gene sequences [7]. Zhang. et al. recently published a deep-learning model DeepHe to predict gene sequences, which had some improved performance
-compared to previous ML models but still lagged behind tradional gene annotting methods [8]. Thus, although progress is being made to implement deep learning models in the processing of genetic data and specifically gene prediction, we are still far from having deep learning models replace traditional manul annotation methods. This project aims to facilitate a deeper understanding of genetic structures across different species—humans, chimpanzees, and dogs—and identify the distinctive genetic markers that define them.
+compared to previous ML models but still lagged behind tradional gene annotting methods [8]. Thus, although progress is being made to implement deep learning models in the processing of genetic data and specifically gene prediction, we are still far from having deep learning models replace traditional manual annotation methods. This project aims to facilitate a deeper understanding of genetic structures across different species—humans, chimpanzees, and dogs—and identify the distinctive genetic markers that define them.
 
-# Data
+# Data and Preprocessing
 
-The gene sequences are classified into 7 distinct classes and the countsf for each class can be found in Table 1. To prepare DNA sequences for the DL models, two crucial preprocessing steps were implemented: padding and one-hot encoding. Here’s a brief description of the methods used:
+The gene sequences are classified into 7 distinct classes and the counts for each class can be found in Table 1. 
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Class Label</th>
+      <th>Gene Type</th>
+      <th># of Sequences</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>G-protein coupled receptor</td>
+      <td>855</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Tyrosine Kinase</td>
+      <td>758</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Tyrosine Phosphatase</td>
+      <td>526</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Synthetase</td>
+      <td>933</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Synthase</td>
+      <td>1028</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Ion-channel</td>
+      <td>387</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Transcription factor</td>
+      <td>2013</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+To prepare DNA sequences for the DL models, two crucial preprocessing steps were implemented: padding and one-hot encoding. Here’s a brief description of the methods used:
 
 ### 1. Determination of Maximum Sequence Length: 
 The length of the longest DNA sequence in the dataset was first identified to establish a uniform sequence length across all samples. This uniformity is crucial for ensuring consistent input size for the neural network.
