@@ -539,7 +539,6 @@ class Encoder(nn.Module):
         super(Encoder, self).__init__()
         self.embedding = nn.Embedding(input_dim, emb_dim)
         self.rnn = nn.LSTM(4, enc_hid_dim, batch_first=True).cuda()
-        # self.rnn = nn.LSTM(4, enc_hid_dim, batch_first=True)
 
         self.fc1 = nn.Linear(enc_hid_dim, enc_hid_dim)
         self.fc2 = nn.Linear(enc_hid_dim, dec_hid_dim)
@@ -556,7 +555,6 @@ class Decoder(nn.Module):
     def __init__(self, output_dim, emb_dim, enc_hid_dim, dec_hid_dim, dropout):
         super(Decoder, self).__init__()
         self.embedding = nn.Embedding(output_dim, emb_dim)
-        # self.rnn = nn.LSTM(emb_dim + enc_hid_dim, dec_hid_dim, batch_first=True)
         self.rnn = nn.LSTM(emb_dim + enc_hid_dim, dec_hid_dim, batch_first=True).to(device)
         self.fc_out = nn.Linear(dec_hid_dim, output_dim)
         self.dropout = nn.Dropout(dropout)
@@ -569,15 +567,11 @@ class Decoder(nn.Module):
 
     def forward(self, input, hidden, encoder_outputs):
         input = input.unsqueeze(1)
-        # print('input shape is:', input.shape)
 
         embedded = self.dropout(self.embedding(input))
-        # print('embedded shape is:', embedded.shape)
-        # print('hidden shape is:', hidden.shape)
-        # print('encoder_outputs shape is:', encoder_outputs.shape)
         attention_weights = self.compute_attention(hidden, encoder_outputs)
         attention_applied = torch.bmm(attention_weights.unsqueeze(1), encoder_outputs)
-        # print('attention_applied shape is:', attention_applied.shape)
+
         rnn_input = torch.cat((embedded, attention_applied), dim=2)
 
         output, (hidden, cell) = self.rnn(rnn_input, (hidden, hidden))
@@ -590,38 +584,26 @@ class Seq2Seq(nn.Module):
         super(Seq2Seq, self).__init__()
         self.encoder = encoder.to(device)
         self.decoder = decoder.to(device)
-        # self.encoder = encoder
-        # self.decoder = decoder
         self.device = device
 
     def forward(self, source):
         # Encode
-
-
         encoder_outputs, hidden = self.encoder(source)
-        # print('encoder_outputs shape is:', encoder_outputs.shape)
-        # print('hidden shape is:', hidden.shape)
         batch_size = source.size(0)
 
         decoder_input = torch.zeros(batch_size, dtype=torch.long, device=self.device)
-        # print('decoder_input shape is:', decoder_input.shape)
-        # decoder_input = torch.zeros(batch_size, dtype=torch.long)
 
         outputs = []
-        # outputs = torch.zeros(10, batch_size, 2, device=self.device)
 
         # Decode per timestep
         for t in range(batch_size):
 
           output, hidden, cell = self.decoder(decoder_input, hidden, encoder_outputs)
-          # print('output shape is:', output.shape)
           outputs.append(output)
-          # outputs[t] = output.argmax(0)
 
           top1 = output.argmax(1)
           decoder_input = top1
 
-        # print('outputs shape is:', len(outputs))
         concatenated_output = torch.cat(outputs, dim=1)
         # print(f"Concatenated output requires_grad: {concatenated_output.requires_grad}")
         return concatenated_output
