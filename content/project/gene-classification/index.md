@@ -106,7 +106,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader, TensorDataset
 import pandas as pd
 import numpy as np
-
+import torch.nn.functional as F
 ```
 
 # Data Loading and One-hot encoding
@@ -533,9 +533,6 @@ print(cm)
 
 
 ```python
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
 
 class Encoder(nn.Module):
     def __init__(self, input_dim, emb_dim, enc_hid_dim, dec_hid_dim, dropout):
