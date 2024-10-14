@@ -41,7 +41,6 @@ The gene sequences are classified into 7 distinct classes and the counts for eac
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
       <th>Class Label</th>
       <th>Gene Type</th>
       <th># of Sequences</th>
