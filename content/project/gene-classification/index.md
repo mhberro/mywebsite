@@ -470,14 +470,6 @@ def validate_epoch(model, dataloader, criterion, device):
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
-# PATH = "/content/drive/MyDrive"
-# checkpoint = torch.load(PATH)
-# model.load_state_dict(checkpoint['model_state_dict'])
-# optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
-# epoch = checkpoint['epoch']
-
-
-
 # Run training and validation
 num_epochs = 30
 for epoch in range(num_epochs):
