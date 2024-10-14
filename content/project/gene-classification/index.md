@@ -415,48 +415,6 @@ model = DNA_Transformer(num_classes=num_classes, d_model=4, nhead=2)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-
-
-```
-
-    /usr/local/lib/python3.10/dist-packages/torch/nn/modules/transformer.py:286: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
-      warnings.warn(f"enable_nested_tensor is True, but self.use_nested_tensor is False because {why_not_sparsity_fast_path}")
-    
-
-
-```python
-class DNA_Transformer(nn.Module):
-    def __init__(self, num_classes, d_model=4, nhead=2, num_encoder_layers=3, dim_feedforward=2048, dropout=0.1):
-        super(DNA_Transformer, self).__init__()
-        self.transformer_encoder_layer = nn.TransformerEncoderLayer(
-            d_model=d_model,   # Matched to the number of features in the input data
-            nhead=nhead,
-            dim_feedforward=dim_feedforward,
-            dropout=dropout
-        )
-        self.transformer_encoder = nn.TransformerEncoder(self.transformer_encoder_layer, num_layers=num_encoder_layers)
-        self.output_layer = nn.Linear(d_model, num_classes)
-
-    def forward(self, src):
-        src = src.permute(1, 0, 2)  # Transformer expects src in shape [seq_len, batch_size, features]
-        transformer_output = self.transformer_encoder(src)
-        output = self.output_layer(transformer_output[-1])  # Use the output of the last sequence position
-        return output
-
-# Adjust the number of heads if necessary. Since `d_model` is now `4`, `nhead` must be a divisor of `4`.
-
-
-
-# Example parameters
-batch_size =16
-seq_length = 9245
-num_features = 4  # One-hot encoded DNA (A, C, G, T)
-num_classes = 7
-model = DNA_Transformer(num_classes=num_classes, d_model=4, nhead=2)
-
-criterion = nn.CrossEntropyLoss()
-optimizer = optim.Adam(model.parameters(), lr=0.001)
-
 ```
 
 
