@@ -826,8 +826,7 @@ print(class_accuracy)
 ```python
 #CNN batch=64
 # Create the numpy array from the provided list of lists
-# Create the numpy array from the provided list of lists
-# Create the numpy array from the provided list of lists
+
 multiclass = np.array([
     [140,   5,   1,   2,  11,   0,  15],
     [  9, 108,   3,   9,   8,   0,  20],
@@ -1040,53 +1039,6 @@ plt.show()
     
 ![png](./DL_New_Data_45_0.png)
     
-
-
-
-```python
-# Plot
-plt.figure(figsize=(4,4))
-
-# Create a bar plot for Precision colored by Batch Size
-precision_plot = sns.barplot(x='Class Label', y='Recall', hue='Batch Size', data=metrics_df_full, palette='crest')
-
-#plt.title('Class Labels vs Recall Colored by Batch Size')
-#plt.legend(title='Batch Size')
-precision_plot.legend_.remove()
-plt.ylim(0.5, 1.0)
-plt.show()
-
-
-```
-
-
-    
-![png](./DL_New_Data_46_0.png)
-    
-
-
-
-```python
-# Plot
-plt.figure(figsize=(4,4))
-
-# Create a bar plot for Precision colored by Batch Size
-precision_plot = sns.barplot(x='Class Label', y='F1-score', hue='Batch Size', data=metrics_df_full, palette='crest')
-
-#plt.title('Class Labels vs F1-score Colored by Batch Size')
-#plt.legend(title='Batch Size')
-precision_plot.legend_.remove()
-plt.ylim(0.5, 1.0)
-plt.show()
-
-
-```
-
-
-    
-![png](./DL_New_Data_47_0.png)
-    
-
 
 
 ```python
